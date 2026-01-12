@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Napoleon Plans | Contact</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+/* Contact form specific */
+.contact-form{
+  max-width:700px;
+  margin:0 auto;
+  background:var(--card-bg);
+  padding:40px;
+  border-radius:20px;
+  box-shadow:0 10px 30px var(--card-shadow);
+}
+.contact-form h2{text-align:center;margin-bottom:30px;}
+.contact-form input, .contact-form textarea{
+  width:100%;
+  padding:15px;
+  margin-bottom:20px;
+  border-radius:10px;
+  border:1px solid #ccc;
+  font-size:16px;
+}
+.contact-form button{
+  width:100%;
+  padding:15px;
+  border:none;
+  background:var(--accent);
+  color:white;
+  font-size:18px;
+  border-radius:30px;
+  cursor:pointer;
+  transition:0.3s;
+}
+.contact-form button:hover{background:#ff8c42;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Napoleon Plans</div>
+  <nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+
+<!-- Contact Form Section -->
+<section>
+<div class="contact-form">
+<h2>Send Us a Message</h2>
+<form action="https://formsubmit.co/chikopatimothy@gmail.com" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+</div>
+</section>
+
+<!-- Footer -->
+<footer>
+<h3>Napoleon Plans</h3>
+<p>Professional Building Designers in Malawi</p>
+<div class="social-horizontal">
+<a href="#"><i class="fab fa-facebook"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+<a href="#"><i class="fab fa-youtube"></i></a>
+<a href="#"><i class="fab fa-linkedin"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="#"><i class="fab fa-tiktok"></i></a>
+</div>
+</footer>
+
+<!-- Floating Social -->
+<div class="social-bar-left">
+<a href="#"><i class="fab fa-facebook"></i></a>
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-tiktok"></i></a>
+</div>
+
+<!-- WhatsApp Floating -->
+<a href="https://wa.me/0994 84 93 10?text=Hello%20Napoleon%20Plans" class="whatsapp" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+// Hamburger dropdown toggle
+const hamburger=document.getElementById('hamburger');
+const mobileMenu=document.getElementById('mobileMenu');
+hamburger.addEventListener('click',()=>{
+  hamburger.classList.toggle('active');
+  if(mobileMenu.style.display==='flex'){
+    mobileMenu.style.display='none';
+  }else{
+    mobileMenu.style.display='flex';
+  }
+});
+</script>
+
+</body>
+</html>

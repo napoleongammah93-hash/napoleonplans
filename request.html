@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Request a Design | Napoleon Plans</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+.request-box{
+  max-width:800px;
+  margin:80px auto;
+  background:var(--card-bg);
+  padding:40px;
+  border-radius:20px;
+  box-shadow:0 10px 30px var(--card-shadow);
+}
+.request-box h2{
+  text-align:center;
+  margin-bottom:30px;
+}
+.request-box input,
+.request-box textarea,
+.request-box select{
+  width:100%;
+  padding:15px;
+  margin-bottom:20px;
+  border-radius:10px;
+  border:1px solid #ccc;
+  font-size:16px;
+}
+.request-box button{
+  width:100%;
+  padding:15px;
+  background:var(--accent);
+  border:none;
+  color:white;
+  font-size:18px;
+  border-radius:30px;
+  cursor:pointer;
+}
+.request-box button:hover{
+  background:#ff8c42;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Napoleon Plans</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="images.html">Images</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="request-box">
+  <h2>Request Your Building Design</h2>
+  <p>Fill in this form and our team will contact you with a design proposal.</p>
+
+  <form action="https://formsubmit.co/chikopatimothy@gmail.com" method="POST">
+    
+    <input type="text" name="name" placeholder="Your Full Name" required>
+
+    <input type="email" name="email" placeholder="Your Email" required>
+
+    <input type="tel" name="phone" placeholder="Phone / WhatsApp Number">
+
+    <select name="project_type" required>
+      <option value="">Select Project Type</option>
+      <option>House</option>
+      <option>School</option>
+      <option>Church</option>
+      <option>Commercial Building</option>
+      <option>Renovation</option>
+      <option>Other</option>
+    </select>
+
+    <textarea name="details" rows="6" placeholder="Describe what you want to build (size, rooms, budget, location etc.)" required></textarea>
+
+    <button type="submit">
+      <i class="fas fa-paper-plane"></i> Send Request
+    </button>
+  </form>
+</section>
+
+</body>
+</html>

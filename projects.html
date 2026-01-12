@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Napoleon Plans | Projects</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Napoleon Plans</div>
+  <nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- Projects Section -->
+<section id="projects">
+<h2>Our Projects</h2>
+
+<div class="filters">
+  <button class="active" onclick="filterGallery('all', this)">All</button>
+  <button onclick="filterGallery('house', this)">Houses</button>
+  <button onclick="filterGallery('commercial', this)">Commercial</button>
+  <button onclick="filterGallery('construction', this)">Construction</button>
+</div>
+
+
+<div class="gallery">
+  <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" class="house">
+  <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" class="commercial">
+  <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511" class="house">
+  <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6" class="construction">
+  <img src="https://images.unsplash.com/photo-1599423300746-b62533397364" class="commercial">
+  <img src="https://images.unsplash.com/photo-1560184897-5f38f1c6f5a1" class="construction">
+</div>
+</section>
+
+<!-- Footer -->
+<footer>
+<h3>Napoleon Plans</h3>
+<p>Professional Building Designers in Malawi</p>
+<div class="social-horizontal">
+<a href="#"><i class="fab fa-facebook"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+<a href="#"><i class="fab fa-youtube"></i></a>
+<a href="#"><i class="fab fa-linkedin"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="#"><i class="fab fa-tiktok"></i></a>
+</div>
+</footer>
+
+<!-- Floating Social -->
+<div class="social-bar-left">
+<a href="#"><i class="fab fa-facebook"></i></a>
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-tiktok"></i></a>
+</div>
+
+<a href="https://wa.me/0994 84 93 10?text=Hello%20Napoleon%20Plans" class="whatsapp" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+// Hamburger toggle
+const hamburger=document.getElementById('hamburger');
+const mobileMenu=document.getElementById('mobileMenu');
+hamburger.addEventListener('click',()=>{
+  hamburger.classList.toggle('active');
+  mobileMenu.style.display = mobileMenu.style.display==='flex'?'none':'flex';
+});
+
+// Gallery filter
+function filterGallery(type, btn){
+  let imgs=document.querySelectorAll(".gallery img");
+  imgs.forEach(img=>{
+    img.style.display = (type=='all'||img.classList.contains(type))?'block':'none';
+  });
+  document.querySelectorAll(".filters button").forEach(b=>b.classList.remove("active"));
+  btn.classList.add("active");
+}
+</script>
+
+</body>
+</html>

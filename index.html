@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Napoleon Plans | Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Napoleon Plans</div>
+    <nav id="navMenu">
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="services.html"><i class="fas fa-cogs"></i> Services</a>
+      <a href="projects.html"><i class="fas fa-project-diagram"></i> Projects</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+      <a href="images.html"><i class="fas fa-image"></i> Images</a>
+      
+      <a href="donate.html" class="donate-btn"><i class="fas fa-hand-holding-heart"></i> Donate</a>
+      
+    </nav>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+  
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="services.html"><i class="fas fa-cogs"></i> Services</a>
+    <a href="projects.html"><i class="fas fa-project-diagram"></i> Projects</a>
+    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    <a href="images.html"><i class="fas fa-image"></i> Images</a>
+    <a href="donate.html" class="donate-btn"><i class="fas fa-hand-holding-heart"></i> Donate</a>
+  </div>
+  
+
+<div class="hero">
+  <div class="hero-box">
+    <h1>NAPOLEON PLANS</h1>
+    <p>Designing and Constructing Beautiful Buildings</p>
+    <button onclick="location.href='request.html'">Request a Design</button>
+
+  </div>
+</div>
+
+<section id="services">
+  <h2>Our Services</h2>
+
+  <div class="services-top">
+    <div class="card"><i class="fas fa-home"></i><h3>House Plans</h3></div>
+    <div class="card"><i class="fas fa-building"></i><h3>Commercial Buildings</h3></div>
+    <div class="card"><i class="fas fa-drafting-compass"></i><h3>3D Designs</h3></div>
+    <div class="card"><i class="fas fa-hard-hat"></i><h3>Construction</h3></div>
+  </div>
+
+  <button class="expand-btn" id="expandServices">Show More Services <i class="fas fa-chevron-down"></i></button>
+
+  <div class="services-dropdown" id="servicesDropdown">
+    <div class="card"><i class="fas fa-tools"></i><h3>Renovations</h3></div>
+    <div class="card"><i class="fas fa-city"></i><h3>Urban Planning</h3></div>
+    <div class="card"><i class="fas fa-hard-hat"></i><h3>Construction</h3></div>
+    <div class="card"><i class="fas fa-project-diagram"></i><h3>Interior Design</h3></div>
+    <div class="card"><i class="fas fa-paint-roller"></i><h3>Exterior Design</h3></div>
+    <div class="card"><i class="fas fa-lightbulb"></i><h3>Consultations</h3></div>
+    
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects">
+<h2>Our Projects</h2>
+<div class="filters">
+<button class="active" onclick="filterGallery('all', this)">All</button>
+<button onclick="filterGallery('house', this)">Houses</button>
+<button onclick="filterGallery('commercial', this)">Commercial</button>
+<button onclick="filterGallery('construction', this)">Construction</button>
+</div>
+<div class="gallery">
+<img src="images/1.jpg" class="house">
+<img src="images/2.jpg" class="commercial">
+<img src="images/3.jpg" class="house">
+<img src="images/4.jpg" class="construction">
+</div>
+</section>
+
+
+<!-- What We Do Section -->
+<section id="what-we-do">
+  <div class="what-we-do-box">
+    <h2>What We Do</h2>
+    <p>
+      At <strong>Napoleon Plans</strong>, we specialize in designing and building structures that combine functionality, beauty, and sustainability.  
+      Our expertise includes:
+    </p>
+    <ul>
+      <li>Residential houses – from small homes to luxurious villas</li>
+      <li>Commercial buildings – offices, shops, and complexes</li>
+      <li>Schools – modern classrooms, auditoriums, and campuses</li>
+      <li>Churches – elegant, inspiring, and welcoming places of worship</li>
+      <li>Renovations – transforming existing spaces into functional and modern designs</li>
+      <li>Urban planning – designing sustainable and organized community layouts</li>
+      <li>Interior and exterior design – ensuring every space looks great inside and out</li>
+      <li>3D visualization – bringing your project to life before construction begins</li>
+      <li>Consultations – guiding you from the first idea to the finished project</li>
+    </ul>
+    <p>
+      Whether you are looking for a new home, a commercial space, or a community project, we are dedicated to providing complete architectural solutions that meet your needs, your budget, and your vision.  
+      With attention to detail, creativity, and professionalism, we make every project a masterpiece.
+    </p>
+  </div>
+</section>
+
+<section id="map-section">
+  <h2>Our Location</h2>
+  <p>Find us along Kamuzu Road, Salima – Malawi</p>
+
+  <div class="map-container">
+    <iframe 
+      src="https://www.google.com/maps?q=Kamuzu%20Road%20Salima%20Malawi&output=embed"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+
+<!-- Featured Projects, Testimonials & FAQ Section -->
+<section id="showcase">
+  <!-- Featured Projects -->
+  <div class="showcase-projects">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="images/1.jpg" alt="Modern House">
+        <h3>Modern House</h3>
+        <p>Luxury residential design with open spaces and modern interiors.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/2.jpg" alt="Office Building">
+        <h3>Office Building</h3>
+        <p>Functional commercial space with contemporary design.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/3.jpg" alt="Community Center">
+        <h3>Community Center</h3>
+        <p>School and community space designed for collaboration and events.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonials -->
+  <div class="showcase-testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <p>"Napoleon Plans turned our dream home into reality! Professional and detail-oriented."</p>
+        <h4>- John Mwale</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"Excellent design and fast execution. Our new office building is stunning!"</p>
+        <h4>- Sarah Banda</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"Highly recommended! Their 3D visualizations helped us understand every detail."</p>
+        <h4>- Peter Chirwa</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="showcase-faq">
+    <h2>(FAQ)Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h4>How long does a typical house design take?</h4>
+      <p>It usually takes 2–4 weeks for a complete design, depending on size and complexity.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Do you handle construction as well?</h4>
+      <p>Yes! We offer full construction services from foundation to finishing touches.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Can you provide 3D visualizations?</h4>
+      <p>Absolutely. We provide realistic 3D renders so you can see your project before construction.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Newsletter Section -->
+<section id="newsletter">
+  <div class="newsletter-box">
+    <h2>Subscribe to Our Newsletter</h2>
+    <p>Get updates on our latest projects, services, and designs directly to your inbox!</p>
+
+    <!-- Mailchimp Signup Form -->
+    <form action="https://YOUR-MAILCHIMP-URL" method="post" target="_blank" novalidate>
+      <input type="email" name="EMAIL" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer>
+<h3>Napoleon Plans</h3>
+<p>Professional Building Designers in Malawi</p>
+<p>Email: <a href="mailto:chikopatimothy@gmail.com">chikopatimothy@gmail.com</a></p>
+
+<div class="social-horizontal">
+<a href="#"><i class="fab fa-facebook"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+<a href="#"><i class="fab fa-youtube"></i></a>
+<a href="#"><i class="fab fa-linkedin"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="#"><i class="fab fa-tiktok"></i></a>
+</div>
+</footer>
+
+<!-- Floating Social -->
+<div class="social-bar-left">
+<a href="#"><i class="fab fa-facebook"></i></a>
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-tiktok"></i></a>
+
+</div>
+
+<a href="https://wa.me/0994 84 93 10?text=Hello%20Napoleon%20Plans" class="whatsapp" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+// Hamburger toggle
+const hamburger=document.getElementById('hamburger');
+const mobileMenu=document.getElementById('mobileMenu');
+hamburger.addEventListener('click',()=>{
+  hamburger.classList.toggle('active');
+  mobileMenu.style.display = mobileMenu.style.display==='flex'?'none':'flex';
+});
+
+// Gallery filter
+function filterGallery(type, btn){
+  let imgs=document.querySelectorAll(".gallery img");
+  imgs.forEach(img=>{
+    img.style.display = (type=='all'||img.classList.contains(type))?'block':'none';
+  });
+  document.querySelectorAll(".filters button").forEach(b=>b.classList.remove("active"));
+  btn.classList.add("active");
+}
+
+
+const expandBtn = document.getElementById('expandServices');
+const servicesDropdown = document.getElementById('servicesDropdown');
+
+expandBtn.addEventListener('click', () => {
+  servicesDropdown.style.display = servicesDropdown.style.display === 'flex' ? 'none' : 'flex';
+  expandBtn.classList.toggle('active');
+});
+</script>
+
+
+
+</body>
+</html>
